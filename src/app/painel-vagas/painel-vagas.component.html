@@ -1,0 +1,47 @@
+<h2>Cadastrar</h2>
+<form>
+  <div>
+    <label for="id" class="title">Id:</label>
+    <input type="text" name="id" [(ngModel)]="vaga.id" />
+  </div>
+
+  <div>
+    <label for="nome" class="title">Nome:</label>
+    <input type="text" name="nome" [(ngModel)]="vaga.nome" />
+  </div>
+
+  <div>
+    <label>Foto: </label>
+    <input type="text" name="foto" [(ngModel)]="vaga.foto" />
+  </div>
+
+  <div>
+    <label>Descrição: </label>
+    <input type="text" name="descricao" [(ngModel)]="vaga.descricao" />
+  </div>
+
+  <div>
+    <label>Salário: </label>
+    <input type="text" name="salario" [(ngModel)]="vaga.salario" />
+  </div>
+
+  <button type="button" class="btn btn-secondary btn-sm" (click)="cadastrar()">
+    Cadastrar Vaga
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-secondary btn-sm"
+    (click)="atualizar(vaga.id)"
+  >
+    Atualizar Vaga
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-secondary btn-sm"
+    (click)="excluir(vaga.id)"
+  >
+    Excluir Vaga
+  </button>
+</form>
