@@ -1,9 +1,20 @@
+h2 {
+  text-align: center;
+  color: crimson;
+}
+
+form {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 label {
-  margin-left: 10px;
+  margin-bottom: auto;
 }
 
 input {
-  font-size: 80%;
+  font-size: 70%;
   color: #5a5854;
   background-color: #f2f2f2;
   border: 1px solid #bdbdbd;
@@ -12,11 +23,14 @@ input {
   background-repeat: no-repeat;
   background-position: 8px 9px;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   margin-left: 10px;
+  margin: 10px auto;
+  width: 500px;
 }
 
 button {
-  padding: 5px;
+  margin-top: 30px;
   margin: 0 10px;
+  margin-bottom: 20px;
 }
